@@ -10,6 +10,8 @@ Frontend/backend boundaries, module layout, persistence, external integrations, 
 
 Once requirements are approved, document entry points, module responsibilities, trust boundaries, external dependencies, data ownership, and key request/data flows using actual file references. Record significant approved choices in [DECISIONS.md](DECISIONS.md).
 
-## Proposed desktop architecture
+## Approved stack; proposed component boundaries
 
 UI → native agent coordinator → validated tool dispatcher / model-provider adapter. The provider connects to local Ollama; tools access only approved project resources, with explicit review for edits and commands. SQLite is proposed for local session storage. No component is implemented. See [ROADMAP.md](ROADMAP.md) for staged delivery and execution-boundary requirements.
+
+Tauri + React/TypeScript + Rust + Ollama is approved in [ADR-001](DECISIONS.md). Component boundaries above remain a design proposal until implemented. No separate hosted backend is planned for the initial local workflow.

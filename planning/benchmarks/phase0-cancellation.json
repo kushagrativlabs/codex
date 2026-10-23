@@ -1,0 +1,32 @@
+{
+  "model": "qwen3.5:0.8b",
+  "preexisting_loaded_models": {
+    "models": [
+      {
+        "name": "qwen3.5:0.8b",
+        "model": "qwen3.5:0.8b",
+        "size": 1394798928,
+        "digest": "d9c89605f39abfd9e8cb4fd3c099c203d7d17e82d7765b4266a0612402d88f1c",
+        "details": {
+          "parent_model": "",
+          "format": "safetensors",
+          "family": "",
+          "families": null,
+          "parameter_size": "",
+          "quantization_level": "mxfp8"
+        },
+        "expires_at": "2026-10-23T17:20:02.271206+05:30",
+        "size_vram": 1394798928,
+        "context_length": 2048,
+        "runner": "mlx"
+      }
+    ]
+  },
+  "closed_before_done": true,
+  "received_content_chunks": 8,
+  "stream_close_seconds": 0.00011016699863830581,
+  "followup_seconds": 0.5345294580001791,
+  "followup_content": "OK",
+  "followup_done_reason": "stop",
+  "limitation": "Client stream closure and subsequent service response only. No engine telemetry or process-level cancellation assertion."
+}

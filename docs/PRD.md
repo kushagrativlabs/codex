@@ -6,7 +6,7 @@ A desktop coding assistant using local models, targeting macOS, Ubuntu, and Wind
 
 ## Verified implementation
 
-Documentation only. No application features have been implemented or benchmarked.
+Documentation only. No application features have been implemented. Synthetic local model benchmarks are recorded in [Phase 0](../planning/PHASE_0.md); further model testing is deferred at user request.
 
 ## Proposed MVP
 

@@ -11,7 +11,7 @@
 
 ## Project rules
 
-- This workspace currently contains documentation only. No stack or product has been approved.
+- This workspace contains documentation and feasibility scripts; no application is implemented. Tauri + React/TypeScript + Rust + Ollama is approved. See `docs/DECISIONS.md`.
 - Follow the established architecture and conventions once they exist; see `docs/ARCHITECTURE.md` and `docs/CODING_STANDARDS.md`.
 - Do not introduce unnecessary dependencies. Obtain approval before selecting or changing the technology stack.
 - Assess migration, compatibility, and data impact before modifying database schemas.

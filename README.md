@@ -1,6 +1,6 @@
 # Project Workspace
 
-This workspace is prepared for AI-assisted development. The planned product is a local-model desktop coding assistant for macOS, Ubuntu, and Windows. No application has been implemented; the proposed stack awaits approval.
+This workspace is prepared for AI-assisted development. The planned product is a local-model desktop coding assistant for macOS, Ubuntu, and Windows. No application has been implemented; Tauri + React/TypeScript + Rust + Ollama is approved; no application is implemented.
 
 ## Current status
 
@@ -11,7 +11,7 @@ This workspace is prepared for AI-assisted development. The planned product is a
 ## Getting started
 
 1. Define the product, intended users, and first usable workflow in [docs/PRD.md](docs/PRD.md).
-2. Propose the stack and obtain approval before adopting it; record the outcome in [docs/TECH_STACK.md](docs/TECH_STACK.md) and [docs/DECISIONS.md](docs/DECISIONS.md).
+2. Use the approved stack and obtain approval before changing it; record decisions in [docs/TECH_STACK.md](docs/TECH_STACK.md) and [docs/DECISIONS.md](docs/DECISIONS.md).
 3. Define the architecture and acceptance criteria before implementation.
 4. Implement one small, testable workflow and document verified setup commands here.
 

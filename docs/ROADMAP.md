@@ -1,6 +1,6 @@
 # Phased Development Plan
 
-Status: proposed implementation sequence, recorded 2026-10-23. No application phase is implemented. No deadlines are committed.
+Status: Phase 0 planning/feasibility complete with further model testing deferred at user request. Phase 1 is next; no application phase is implemented. See [evidence and closure](../planning/PHASE_0.md). No deadlines are committed.
 
 ## Confirmed direction
 
@@ -14,7 +14,7 @@ Build a desktop coding assistant that uses local models. Target macOS, Ubuntu, a
 - Measure response latency, total memory pressure, context limits, cancellation, and tool-call correctness. Define acceptable thresholds before evaluating results.
 - Use a separate Ollama installation initially; model choice and distribution remain pending approval.
 
-Exit: approved scope and stack; recorded benchmark results; a usable model/context configuration or a documented scope adjustment. Do not assume chat quality proves reliable autonomous tool use.
+Exit: approved stack, initial local-chat scope, recorded evidence, and documented deferral. Closed on 2026-10-23 after the user reported 3B/4B models work well and asked to skip further testing. Use manual model selection in Phase 1. This does not establish reliable autonomous tool use.
 
 ## Phase 1 — Desktop shell and local chat
 
