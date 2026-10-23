@@ -4,18 +4,18 @@ Last updated: 2026-10-23.
 
 ## Verified state
 
-The workspace was empty before this setup. It now contains a Markdown documentation foundation only. No application code, dependency manifests, tests, database, APIs, environment configuration, infrastructure, or deployment workflows have been added.
+The workspace contains documentation only. No application code, dependencies, test tooling, model installation, or benchmarks have been added.
 
-The user requested documentation setup in the empty workspace. No product specification or technology preference was supplied. Application implementation remains pending a scoped request and stack approval.
+## User direction
 
-## Session handoff
+Build a local-model desktop coding assistant. Target macOS, Ubuntu, and Windows. Initial development hardware: Apple M2 with 8 GB RAM. The user requested phases before implementation.
 
-Read `AGENTS.md`, relevant documents, and `planning/TASKS.md` before work. Treat placeholder sections as planning guidance, not implemented capabilities. Preserve verified facts and record evidence for new claims.
+## Proposed approach
 
-## Next steps
+Tauri + React/TypeScript interface, Rust core, separately installed Ollama, and SQLite. This proposal replaces the earlier macOS-only SwiftUI recommendation; no stack has yet been approved or installed. Model selection depends on measured memory use and coding/tool-call reliability.
 
-Confirm the product's purpose, users, and first workflow; define acceptance criteria; propose a stack for approval; then implement the approved scope with appropriate checks.
+Read [../docs/ROADMAP.md](../docs/ROADMAP.md) for phase scope and exit criteria. Next work is Phase 0: confirm scope/stack and evaluate feasibility. No app phase is complete.
 
 ## Validation
 
-Documentation setup validation checks expected file presence and local Markdown link targets. No application tests can run because an application and test tooling do not exist.
+Local Markdown links and documentation file presence are checked. No application or cross-platform behavior has been tested.

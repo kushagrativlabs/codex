@@ -1,26 +1,27 @@
 # Tasks
 
-## Completed — 2026-10-23
+## Completed — documentation only
 
-- [x] Inspect the workspace and confirm it contains no application files.
-- [x] Create the requested Markdown documentation foundation.
-- [x] Define AI session workflow and project safety rules.
-- [x] Verify expected documentation files and local links.
+- [x] Inspect the empty workspace and create 18 Markdown documents.
+- [x] Record local coding-assistant direction and M2/8 GB hardware constraint.
+- [x] Draft phases for macOS, Ubuntu, and Windows with completion criteria.
+- [x] Check local documentation links.
 
-## Pending — requires product input
+## Next — Phase 0
 
-- [ ] Confirm product name, purpose, intended users, and primary workflow.
-- [ ] Define MVP requirements and acceptance criteria in `docs/PRD.md`.
-- [ ] Propose and approve a technology stack.
-- [ ] Record architecture and approved decisions.
+- [ ] Confirm proposed stack and MVP boundaries.
+- [ ] Define minimum OS versions and test environments.
+- [ ] Define benchmark tasks and acceptable performance/reliability thresholds.
+- [ ] Benchmark candidate model configurations on M2/8 GB.
+- [ ] Record approved architecture and technical decisions.
 
-## Proposed implementation follow-up
+## Pending implementation
 
-- [ ] Obtain a scoped application implementation request.
-- [ ] Add approved application scaffolding and validation tools.
-- [ ] Implement and test the first approved workflow.
-- [ ] Update setup, testing, and configuration documentation using verified commands.
+- [ ] Phase 1: desktop shell and local chat.
+- [ ] Phase 2: read-only project awareness.
+- [ ] Phase 3: reviewed file edits.
+- [ ] Phase 4: approved commands and verification.
+- [ ] Phase 5: persistence and usability.
+- [ ] Phase 6: cross-platform beta and packaging.
 
-## Blockers
-
-Application implementation depends on product definition and stack approval. There is no existing application to analyze or run.
+See [../docs/ROADMAP.md](../docs/ROADMAP.md) for details. Stack approval, model feasibility, OS support policy, and access to Windows/Ubuntu validation environments remain unresolved. No implementation work is complete.

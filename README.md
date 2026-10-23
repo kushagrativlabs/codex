@@ -1,11 +1,11 @@
 # Project Workspace
 
-This workspace is prepared for AI-assisted development. No application has been implemented, and no technology stack has been selected.
+This workspace is prepared for AI-assisted development. The planned product is a local-model desktop coding assistant for macOS, Ubuntu, and Windows. No application has been implemented; the proposed stack awaits approval.
 
 ## Current status
 
 - Documentation and planning structure initialized on 2026-10-23.
-- Product name, users, requirements, architecture, and deployment target: undecided.
+- Product name, detailed requirements, supported OS versions, and distribution method: pending. Initial hardware: Apple M2 with 8 GB RAM.
 - No application source, dependency manifests, database, APIs, tests, or CI/CD configuration exists.
 
 ## Getting started
