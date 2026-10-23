@@ -12,13 +12,19 @@
 - [x] Close Phase 0 with outstanding model qualification deferred, not passed.
 - [x] Prepare [Phase 1 acceptance criteria](PHASE_1_HANDOFF.md).
 
-## Next — Phase 1, not started
+## Phase 1 — implemented, cross-platform acceptance pending
 
-- [ ] Verify/install Rust build tools and pin compatible dependencies.
-- [ ] Scaffold the Tauri + React/TypeScript desktop shell and Rust provider adapter.
-- [ ] Connect to local Ollama and list installed models for manual selection.
-- [ ] Implement streamed conversation, stop behavior, and runtime error recovery.
-- [ ] Verify functional checks and native builds on available platforms; document unavailable target environments.
+- [x] Install project-local Rust tools without changing shell profiles.
+- [x] Scaffold Tauri + React/TypeScript and native provider adapter; add lockfiles.
+- [x] Connect to local Ollama and list installed models for manual selection.
+- [x] Implement streamed conversation, Stop, single-flight protection, context bounds, and error recovery.
+- [x] Pass 8 frontend tests, 12 Rust tests, frontend build, and Rust lint.
+- [x] Build and open a debug macOS app; verify live chat and Stop.
+- [x] Update documentation with actual setup and verified behavior.
+- [ ] Build and smoke-test Windows and Ubuntu in native environments.
+- [ ] Complete full keyboard/accessibility review.
+
+See [PHASE_1_VERIFICATION.md](PHASE_1_VERIFICATION.md). No additional model benchmarks are required.
 
 ## Later phases
 
@@ -30,4 +36,4 @@
 
 ## Deferred and unresolved
 
-Further model benchmarks are skipped at user request. Minimum OS versions, actual Windows/Ubuntu validation environments, and production resource limits remain unverified. SQLite remains proposed. No application phase is implemented. Public GitHub push approval remains unresolved.
+Further model benchmarks are skipped at user request. Minimum OS versions, actual Windows/Ubuntu validation environments, and production resource limits remain unverified. SQLite remains proposed. Phase 1 is implemented on macOS; cross-platform validation remains open. Public GitHub push approval remains unresolved.

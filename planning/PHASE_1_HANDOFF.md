@@ -1,6 +1,6 @@
 # Phase 1 Implementation Handoff
 
-Status: ready for Phase 1 after Phase 0 closure; implementation specification only. No application code or platform builds exist.
+Status: implementation specification retained for traceability. Phase 1 is implemented and validated on macOS; see [verification](PHASE_1_VERIFICATION.md) for completed and pending checks.
 
 ## Scope
 
@@ -29,7 +29,7 @@ Ollama remains separately installed. Keep model selection manual, with measured 
 
 ## Development readiness
 
-Node/npm and Apple command-line tools were observed. Rust is missing; verify/install through the official Rust workflow when beginning implementation, then pin compatible project dependencies. Do not infer a usable Tauri build from a tool inventory.
+Node/npm and Apple command-line tools were observed. Rust 1.99.1 was installed into the ignored project-local toolchain during implementation; dependencies are recorded in lockfiles. Do not infer a usable Tauri build from a tool inventory.
 
 ## Platform validation plan
 

@@ -6,7 +6,7 @@ A desktop coding assistant using local models, targeting macOS, Ubuntu, and Wind
 
 ## Verified implementation
 
-Documentation only. No application features have been implemented. Synthetic local model benchmarks are recorded in [Phase 0](../planning/PHASE_0.md); further model testing is deferred at user request.
+Documentation only. Phase 1 local chat is implemented with model selection, streaming, stop, connection recovery, and session-only history. macOS functional checks and automated tests pass; Windows/Ubuntu are unverified. See [Phase 1 verification](../planning/PHASE_1_VERIFICATION.md). Further model benchmarking remains deferred at user request.
 
 ## Proposed MVP
 

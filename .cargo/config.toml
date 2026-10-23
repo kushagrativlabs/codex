@@ -1,0 +1,3 @@
+[build]
+# Keep native builds manageable on the initial 8 GB development machine.
+jobs = 2

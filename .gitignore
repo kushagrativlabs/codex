@@ -1,0 +1,13 @@
+node_modules/
+dist/
+src-tauri/target/
+.toolchains/
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+src-tauri/gen/
+*.tsbuildinfo
+# Required Vite entry point; override a machine-wide index.html ignore rule.
+!index.html

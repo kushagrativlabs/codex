@@ -1,6 +1,6 @@
 # Phased Development Plan
 
-Status: Phase 0 planning/feasibility complete with further model testing deferred at user request. Phase 1 is next; no application phase is implemented. See [evidence and closure](../planning/PHASE_0.md). No deadlines are committed.
+Status: Phase 0 planning/feasibility complete with further model testing deferred at user request. Phase 1 is implemented and verified on macOS; its Windows/Ubuntu acceptance checks remain open. See [Phase 1 verification](../planning/PHASE_1_VERIFICATION.md). See [evidence and closure](../planning/PHASE_0.md). No deadlines are committed.
 
 ## Confirmed direction
 

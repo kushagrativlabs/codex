@@ -2,7 +2,7 @@
 
 ## Existing conventions
 
-There is no application code from which to infer language-specific conventions. The following are proposed baseline practices for future development, not evidence of implemented architecture.
+Phase 1 uses React function components, strict TypeScript, CSS classes, and Rust modules with serde types. Keep UI state in the frontend and network validation/cancellation in the native core.
 
 ## Baseline practices
 
@@ -18,4 +18,4 @@ There is no application code from which to infer language-specific conventions. 
 
 Use descriptive Markdown headings and relative links within repository documents. Separate verified facts, proposals, and unknowns. Reference real paths and avoid duplicating detailed explanations across files.
 
-No formatter, linter, source-directory convention, or naming scheme is configured yet.
+Frontend code is under `src/`; native code under `src-tauri/src/`. Use `npm run format:rust` and `npm run lint:rust`. TypeScript is checked by `npm run build`; no frontend formatter/linter is configured. Add meaningful regression checks for changed behavior.

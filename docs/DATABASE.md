@@ -1,9 +1,5 @@
 # Database
 
-## Verified state
+No database, migrations, schema, seed data, or disk-backed chat history is implemented. Phase 1 conversations exist only in frontend memory and disappear when the application closes or New chat is selected.
 
-No database, models, tables, schema, migrations, or seed data exists. Persistence requirements are undecided.
-
-## Future documentation
-
-If persistence is adopted, document entities, fields, relationships, constraints, indexes, retention rules, migration commands, and backup/restore procedures from verified implementation. Assess compatibility and existing data impact before schema changes. Never use production records or credentials as documentation examples.
+SQLite remains proposed for Phase 5 and has not been added as a dependency. Before persistence is introduced, define storage paths per platform, schema, privacy/deletion behavior, migration compatibility, and backup/export requirements. Never use real private conversation records in fixtures or documentation.

@@ -34,3 +34,12 @@ No application releases or earlier history are known. Future entries should desc
 - Recorded the user's successful 3B/4B experience and instruction to skip further model tests.
 - Closed Phase 0 planning/feasibility with unverified checks explicitly deferred; prepared Phase 1 scope and acceptance criteria.
 - No application implementation, model downloads, dependency installation, deployment, or GitHub push performed.
+
+## 2026-10-23 — Phase 1 local chat implementation
+
+- Added Tauri desktop shell, React/TypeScript UI, and Rust local Ollama adapter.
+- Added installed-model selection, streamed conversation, stop, session reset, context bounds, and runtime error recovery.
+- Added per-request cancellation, single-flight protection, bounded stream parsing, and plain-text output.
+- Added dependency lockfiles, local toolchain wrapper, application icons, and tests.
+- Verified frontend build/tests, Rust tests/lint, local macOS bundle, live chat, and live Stop. Windows/Ubuntu native checks remain pending.
+- No further model benchmarks, public uploads, or deployment performed.

@@ -1,18 +1,24 @@
 # Technology Stack
 
-No application dependencies are installed and no versions are pinned. Existing host tools and model smoke results are recorded in [Phase 0](../planning/PHASE_0.md). Tauri + React/TypeScript + Rust + Ollama was approved on 2026-10-23; it is not yet implemented. SQLite remains proposed.
+Approved: Tauri + React/TypeScript + Rust + separately installed Ollama. SQLite remains proposed for later persistence.
 
-| Layer | Selection | Purpose |
-| --- | --- | --- |
-| Desktop shell | Tauri | Shared macOS, Ubuntu, and Windows app |
-| Interface | React and TypeScript | Chat, project navigation, and diff review |
-| Native application core | Rust | File access, process control, and agent coordination |
-| Model runtime | Ollama, separately installed | Local inference through a replaceable provider adapter |
-| Local persistence | SQLite (proposed) | Projects and conversation history |
-| Model | Undecided | Benchmark a small quantized coding model on M2/8 GB |
+## Implemented versions
 
-SwiftUI was an earlier recommendation for a macOS-only app. The shared desktop proposal reflects the expanded platform target; no source migration is needed because no application exists.
+| Component | Version/evidence |
+| --- | --- |
+| React / React DOM | 19.3.1, exact `package.json` versions |
+| TypeScript | 5.9.3 |
+| Vite | 8.3.5 |
+| Tauri JS API / CLI | 2.12.4 |
+| Tauri Rust crate | 2.12.5 resolved in `src-tauri/Cargo.lock` |
+| Rust compiler used | 1.99.1 on aarch64-apple-darwin |
+| Node.js / npm used | 22.14.0 / 10.9.2 |
+| reqwest | 0.12.28 resolved; local HTTP with JSON and streaming features |
+| Tokio / tokio-util | Async I/O, timeouts, and cancellation; see Cargo.lock |
+| Vitest | 5.0.5 |
+| React Testing Library / jsdom | 16.3.3 / 29.1.1 |
+| Ollama service/client observed | 0.40.8; external runtime, not bundled |
 
-Select supported versions, build tools, and testing dependencies during Phase 0. Do not infer equivalent model performance across different hardware.
+Npm dependencies are pinned in `package.json` and `package-lock.json`; Rust dependency resolutions are pinned by `src-tauri/Cargo.lock`. No database, Markdown-rendering package, file-access plugin, or shell plugin is installed.
 
-References: [Tauri](https://tauri.app/concept/architecture/), [Ollama](https://ollama.com/download).
+Mac-only SwiftUI was superseded by the cross-platform stack before application implementation. Sources and version decisions are recorded in [DECISIONS.md](DECISIONS.md); do not change the stack without approval.

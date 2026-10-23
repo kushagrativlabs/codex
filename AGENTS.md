@@ -11,7 +11,7 @@
 
 ## Project rules
 
-- This workspace contains documentation and feasibility scripts; no application is implemented. Tauri + React/TypeScript + Rust + Ollama is approved. See `docs/DECISIONS.md`.
+- Phase 1 implements Tauri + React/TypeScript + Rust + Ollama local chat. macOS is validated; Windows/Ubuntu remain unverified. See `docs/DECISIONS.md` and `planning/PHASE_1_VERIFICATION.md`.
 - Follow the established architecture and conventions once they exist; see `docs/ARCHITECTURE.md` and `docs/CODING_STANDARDS.md`.
 - Do not introduce unnecessary dependencies. Obtain approval before selecting or changing the technology stack.
 - Assess migration, compatibility, and data impact before modifying database schemas.
@@ -21,6 +21,10 @@
 - Preserve useful existing documentation. Distinguish verified implementation from proposals and mark uncertain claims **Needs Verification**.
 - Do not invent requirements, API contracts, completed tasks, release history, or decision rationale.
 - Documentation setup does not authorize application implementation, dependency installation, migrations, infrastructure changes, or deployment. Follow the scope of each user request.
+
+## Validation commands
+
+Use `npm test`, `npm run build`, `npm run test:rust`, and `npm run lint:rust` as appropriate. Backend fixture tests need local sockets. Run `npm run desktop` for the app; `npm run dev` is layout preview only. Do not resume model benchmarks unless requested or needed to investigate a new functional issue.
 
 ## References
 
